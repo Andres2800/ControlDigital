@@ -3,8 +3,10 @@
 
 #include <stdio.h>
 #include <modulo.c>
-void encenderLed(uint16_t led);
-void apagarLed(uint16_t led);
+
+bool encenderLed(uint16_t led);
+bool apagarLeds();
+bool leerTecla(uint16_t tecla);
 
 
 #endif
