@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <Arduino.h>
 
+//extern "C"{#include "modulo.h"}
+
 int anterior;
 bool valor;
 

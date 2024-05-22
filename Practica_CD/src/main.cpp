@@ -1,5 +1,8 @@
 #include <Arduino.h>
 #include <modulo.h>
+
+
+
 #define LED_GREEN 9
 #define LED_YELLOW 8
 #define LED_RED 7
@@ -11,8 +14,7 @@
 uint16_t retraso = 200;
 unsigned long prev_time = 0;
 int contador = 1;
-const uint16_t secuencia1[] = {LED_GREEN, LED_YELLOW, LED_RED, LED_BLUE};
-const uint16_t secuencia2[] = {LED_BLUE, LED_RED, LED_YELLOW, LED_GREEN};
+const uint16_t secuencia[] = {LED_GREEN, LED_YELLOW, LED_RED, LED_BLUE};
 bool sentido = true;
 
 void setup() {
@@ -31,11 +33,13 @@ void setup() {
 void loop() {
   unsigned long current_time = millis();
   if((current_time - prev_time) >= retraso){
-    prev_time = current_time;
-    contador ++;
+    prev_time = current_time;    
     bool ledsa = apagarLeds();
-    if (sentido){bool ledsp = encenderLed(secuencia1[contador%4]);}
-    else{bool ledsp = encenderLed(secuencia2[contador%4]);}
+    bool ledsp = encenderLed(secuencia[contador]);
+    if (sentido){contador ++;}else{contador --;}    
+    if (contador >= 4){contador = 0;}
+    if (contador < 0){contador = 3;}
+    
   }
   
  bool tecla1 = leerTecla(SW1);
