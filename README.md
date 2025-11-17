@@ -1,6 +1,6 @@
 # Arduino Projects with PlatformIO
 
-This repository contains two Arduino projects developed using the PlatformIO ecosystem. Each project addresses a specific problem and provides a solution through Arduino programming.
+This repository contains two Arduino projects developed using the PlatformIO enviroment. Each project addresses a specific problem and provides a solution through Arduino programming.
 
 ## Projects
 
