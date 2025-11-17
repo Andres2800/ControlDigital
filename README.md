@@ -1,31 +1,30 @@
-# Proyectos de Arduino con PlatformIO
+# Arduino Projects with PlatformIO
 
-Este repositorio contiene dos proyectos de Arduino creados utilizando la plataforma PlatformIO. Cada proyecto aborda una problemática específica y ofrece una solución mediante programación en Arduino.
+This repository contains two Arduino projects developed using the PlatformIO ecosystem. Each project addresses a specific problem and provides a solution through Arduino programming.
 
-## Proyectos
+## Projects
 
-### 1. Control de Secuencia de Leds
+### 1. LED Sequence Control
 
-Este proyecto controla una secuencia de cuatro LEDs utilizando cuatro pulsadores:
-- Dos pulsadores controlan el sentido de la secuencia (hacia adelante o hacia atrás).
-- Los otros dos pulsadores controlan la velocidad de encendido de los LEDs.
+This project controls a sequence of four LEDs using four push buttons:
+- Two buttons control the direction of the sequence (forward or backward).
+- The other two buttons control the speed at which the LEDs turn on.
 
-#### Características:
-- Control de secuencia de LEDs.
-- Control de dirección (adelante y atrás).
-- Control de velocidad de la secuencia.
+#### Features:
+- LED sequence control.
+- Direction control (forward and backward).
+- Sequence speed control.
 
-### 2. Mecanismo Anti Rebotes
+### 2. Debounce Mechanism
 
-Este proyecto implementa un mecanismo anti rebotes mediante software, utilizando la arquitectura de máquinas de estados finitos (FSM, por sus siglas en inglés).
+This project implements a software-based debounce mechanism using a finite state machine (FSM) architecture.
 
-#### Características:
-- Eliminación de rebotes en los pulsadores.
-- Implementación de una máquina de estados finitos para el control del debounce.
+#### Features:
+- Button debounce elimination.
+- Implementation of a finite state machine for debounce control.
 
-## Requisitos
+## Requirements
 
-Para ejecutar estos proyectos, necesitarás:
-- [PlatformIO](https://platformio.org/) instalado en tu sistema.
-- Un microcontrolador compatible con Arduino.
-
+To run these projects, you will need:
+- [PlatformIO](https://platformio.org/) installed on your system.
+- A microcontroller compatible with Arduino.
